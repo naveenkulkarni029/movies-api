@@ -15,16 +15,10 @@ public class MoviesController {
 
 	@GetMapping(value="api/v1/movies", produces=MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Movie> getMovies(){
-	    
 	    LOGGER.info("get Movie");
-	    
 		Movie movie = new Movie();
 		movie.setMovieName("3Idiots :P");
-		
 		return ResponseEntity.ok(movie);
 		
 	}
-	
-	
-	
 }
