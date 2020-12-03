@@ -18,6 +18,7 @@ public class MoviesController {
 	    LOGGER.info("get Movie");
 		Movie movie = new Movie();
 		movie.setMovieName("3Idiots :P");
+		System.out.println(movie);
 		return ResponseEntity.ok(movie);
 		
 	}
